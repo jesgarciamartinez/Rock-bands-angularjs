@@ -1,5 +1,5 @@
 <ul>
   <li ng-repeat="band in bands">
-    <a href="#/{{band.name}}">{{band.name}}</a>
+    <a href="{{nameToUrl(band.name)}}">{{band.name}}</a>
   </li>
 </ul>
