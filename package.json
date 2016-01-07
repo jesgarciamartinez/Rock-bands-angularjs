@@ -1,0 +1,9 @@
+{
+  "version": "0.0.0",
+  "name": "angularRocksApp",
+  "description": "An AngularJS app",
+  "repository": "https://github.com/jesgarciamartinez/Rock-bands-angularjs.git",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
