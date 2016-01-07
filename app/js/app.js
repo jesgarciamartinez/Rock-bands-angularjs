@@ -5,10 +5,18 @@ var angularRocksApp = angular.module('angularRocksApp', [
   'controllers'
 ]);
 
+var demo = angular.module('demo', ['ngRoute']);
+demo.config(function ($routeProvider) {
+  $routeProvider.when('/', {
+    controller: 'testController',
+    templateUrl: 'test.html'
+  });
+});
+
 angularRocksApp.config(['$routeProvider', '$locationProvider',
-  function ($routeProvider, $locationProvider) {
+  function ($routeProvider) {
     $routeProvider.when('/', {
-      templateUrl: '/partials/band-list.html',
+      templateUrl: 'partials/band-list.html',
       controller: 'BandListCtrl'
     })
       .when('/:name', {
@@ -24,9 +32,9 @@ angularRocksApp.config(['$routeProvider', '$locationProvider',
         redirectTo: '/'
       });
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+  /*    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+      });*/
   }
 ]);
