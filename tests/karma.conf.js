@@ -6,6 +6,7 @@ module.exports = function (config) {
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js',
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js',
       'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0/angular-mocks.js',
+      'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js',
       'app/js/*.js',
       'tests/unit/*.js'
     ],

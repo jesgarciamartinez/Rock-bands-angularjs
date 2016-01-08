@@ -2,7 +2,8 @@
 
 var angularRocksApp = angular.module('angularRocksApp', [
   'ngRoute',
-  'controllers'
+  'controllers',
+// 'services'
 ]);
 
 angularRocksApp.config(['$routeProvider', '$locationProvider',
@@ -13,7 +14,7 @@ angularRocksApp.config(['$routeProvider', '$locationProvider',
     })
       .when('/:name', {
         templateUrl: 'partials/band-detail.html',
-        controller: 'BandListCtrl'
+        controller: 'BandDetailCtrl'
       })
       .when('/foo', {
         templateUrl: 'partials/in-construction.html'

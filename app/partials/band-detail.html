@@ -1,14 +1,13 @@
 <div class="video-container">
-  <!--<iframe width="560" height="315" src="{{band.videoUrl}}" frameborder="0" allowfullscreen></iframe>-->
-  <iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="315"></iframe>
+  <iframe width="560" height="315" ng-src="{{band.videoUrl}}" frameborder="0"></iframe>
 </div>
 
 <div class="container">
   <article class="text-center">
-    <h1>{{band.name}} The Beatles</h1>
-    <p class="lead">{{band.description}} The Beatles fueron una banda de rock inglesa activa durante la década de 1960, y reconocida como la más exitosa comercialmente y críticamente aclamada en la historia de la música popular.</p>
+    <h1>{{band.name}}</h1>
+    <p class="lead">{{band.text}}</p>
   </article>
 </div>
 
-<!-- <img src="img/" + {{band.name}} + ".jpg" alt="{{band.name}}" class="img-responsive"> -->
-<img src="img/the-beatles.jpg" alt="{{band.name}}">
+<img ng-src="img/{{nameToUrl(band.name)}}.jpg" alt="{{band.name}}" class="img-responsive">
+<!-- <img src="img/the-beatles.jpg" alt="{{band.name}}"> -->
