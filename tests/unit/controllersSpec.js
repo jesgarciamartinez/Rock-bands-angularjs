@@ -3,7 +3,7 @@ describe('BandListCtrl', function () {
 
   it('should create a list of three bands', inject(function ($controller) {
     var scope = {};
-    var ctrl = $controller('BandListCtrl', {$scope: scope});
+    var ctrl = $controller('BandListCtrl', {$scope: scope, $http: http});
 
     expect(scope.bands.length).toBe(3);
   }));
@@ -12,8 +12,8 @@ describe('BandListCtrl', function () {
     var scope = {};
     var ctrl = $controller('BandListCtrl', {$scope: scope});
 
-    expect(scope.nameToUrl('The Rolling Stones')).toBe('#/the-rolling-stones');
-    expect(scope.nameToUrl('Queen')).toBe('#/queen');
+    expect(scope.nameToUrl('The Rolling Stones')).toBe('the-rolling-stones');
+    expect(scope.nameToUrl('Queen')).toBe('queen');
   }));
 
 });
