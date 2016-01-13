@@ -15,6 +15,7 @@
 
 ul {
   list-style-type: none;
+  background-image: url(../img/in-construction.jpg);
 }
 
 img, li {
@@ -27,4 +28,8 @@ img, li {
 li {
   margin-top: 5em;
   margin-bottom: 15em;
+}
+
+a {
+  color: darkred;
 }
